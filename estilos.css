@@ -1,0 +1,145 @@
+/* Texto global */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Enmarcamos imagen de fondo en cabecera */
+header{
+    background-image: url(/img/fondo.jpeg);
+    background-size: 100%;
+    background-position: center;
+    height: 200px;
+    display: flex; /*Poner contenedor como flex para crear adaptabilidad en el contenedor*/
+    justify-content: center; /*Horizontal*/
+    align-items: center; /*Vetical*/
+}
+/* Los h1, en este caso solo del header */
+h1{
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* Barra superior */
+nav {
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+}
+/* Estilo de los links */
+a {
+    color: brown;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* Declaramos cuando se pose ratón por encima */
+a:hover {
+    background-color: darkblue;
+    color: white;
+}
+/* Organizamos main en filas */
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /*  ¿Columnas? */
+
+}
+/* Box del conjunto de cajas */
+.zona-secciones {
+    display: flex;
+    justify-content: space-between;
+    /*width: -webkit-fill-available;*/
+    width: 100%;
+    margin-top: 20px ;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    
+    
+    /* ¿Qué pasa con los hijos de este? */
+
+}
+/* Clases caja, cada elemento del zona-secciones */
+.caja {
+    width: calc(100%/3 - 10px);
+    height: 180px;
+    background-color: lightgray;
+    border: 1px solid ;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+
+}
+/* Box del conjunto de imágenes */
+.zona-imagenes {
+    display: flex;                
+    flex-wrap: wrap;             
+    justify-content: center;      
+    align-items: center;          
+    width: 100%;                  
+    border: 2px solid black;      
+    padding: 10px;                
+    box-sizing: border-box;       
+    gap: 10px;
+    
+
+}
+/* Declaración del estilo de los div de las imágenes */
+.img-envoltorio {
+    position: relative;           
+    width: 150px;                 
+    height: 150px;                
+    overflow: hidden;             
+    border: 2px solid black; 
+}
+
+/* Imágenes Dentro De Envoltorio: */
+.img-envoltorio img {
+    width: 100%;                
+    height: 100%;               
+    object-fit: cover;
+} 
+
+/* Dentro de cada div de imagen hay un texto con clase imagen-tag */
+.imagen-tag {
+    position: absolute;            
+    bottom: 0;                     
+    left: 0;                       
+    width: 100%;                   
+    background-color: rgba(0, 0, 0, 0.5);  
+    color: white;                  
+    text-align: center;            
+    padding: 5px;                  
+    box-sizing: border-box;        
+}
+/* Dado en práctica*/
+.zona-formulario {
+    width: 100%;            /* Ocupa 100% del ancho de su padre */
+    border: 2px solid #000; /* Añade borde al contenedor */
+    padding: 20px;          /* Algo de relleno */
+    box-sizing: border-box; /* Asegura que relleno y borde se incluyen en las dimensiones del contenedor */
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+/* Pie de página */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+
+
+
+
+
