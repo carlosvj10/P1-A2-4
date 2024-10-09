@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Codifique el título de la página-->
      <title>WebTechs S.L.</title> 
+     <link rel="stylesheet" href="../estilosAux.css" type="text/css">
   </head>
 
   <body>
     <!-- Codifique aquí la cabecera -->
-    <H1> WebTechs S.L. </H1>
+    <header>
+      <H1> WebTechs S.L. </H1>
+    </header>
     <!-- Codifique aquí la barra de navegación -->
     <nav>
         <a href="../p1.html"> Frontal </a>
@@ -18,13 +21,39 @@
     </nav>
 
     <main>
-        <h5>Policía: </h5>
-        <a href="https://www.policia.es/_ca-valencia/dependencias_localizador_accesible_provincias.php">Clickar para ir a la página web de la policía navional de Valencia</a>
-        <h5>Ambulancia: </h5>
-        <a href="https://www.ambulanciascivera.com/">Clickar para ir a la página web de las ambulancias de Valencia</a>
-        <h5>Bomberos: </h5>
-        <a href="https://www.bombersdv.es/es/">Clickar para ir a la página web de los bomberos de Valencia</a>
-        <h5>Proveedor: </h5>
-        <a href="https://www.meditecs.com/es/proveedores-de-tecnologia-medica/">Clickar para ir a la página web proveedores de suministros médicos</a>
+        <div class="zona-enlaces">
+          <div class="enlace-web" id="policia">
+            <a class="enlace-web-link" href="https://www.policia.es/_ca-valencia/dependencias_localizador_accesible_provincias.php">
+              <div class="nombre-enlace">
+                <p >Policía: </p>
+              </div>
+            </a>
+            <img class="img-enlace" src="../img/escudoPoliciaNacional.jfif" alt="imagen-policia">
+          </div>
+          <div class="enlace-web" id="ambulancia">
+            <a class="enlace-web-link" href="https://www.ambulanciascivera.com/">
+              <div class="nombre-enlace">
+                <p >Ambulancia: </p>
+              </div>
+            </a>
+            <img class="img-enlace" src="../img/enlaceAmbulancia.jfif" alt="imagen-ambulancia">
+          </div>
+          <div class="enlace-web" id="bomberos">
+            <a class="enlace-web-link" href="https://www.bombersdv.es/es/">
+              <div class="nombre-enlace">
+                <p>Bomberos: </p>
+              </div>
+            </a>
+            <img class="img-enlace" src="../img/escudoBomberos.jfif" alt="imagen-bomberos">
+          </div>
+          <div class="enlace-web" id="proveedor">
+            <a class="enlace-web-link" href="https://www.meditecs.com/es/proveedores-de-tecnologia-medica/">
+              <div class="nombre-enlace">
+                <p>Proveedor: </p>
+              </div>
+            </a>
+            <img class="img-enlace" src="../img/proveedorMediatecs.png" alt="imagen-proveedor">
+          </div>
+        </div>
     </main>
   </body>
