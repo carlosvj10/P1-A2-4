@@ -74,8 +74,11 @@ main {
     border: 1px solid ;
     padding: 5px;
     box-sizing: border-box;
-    overflow-y: scroll;
+    overflow-y: auto;
 
+}
+#contenedor-central {
+    overflow-y: inherit; /*Para eliminar scroll*/
 }
 /* Box del conjunto de imágenes */
 .zona-imagenes {
